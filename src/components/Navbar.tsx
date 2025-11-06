@@ -1,5 +1,5 @@
 import { Link, useLocation } from "react-router-dom";
-import { Github, FileText, Activity } from "lucide-react";
+import { Github, Activity } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { cn } from "@/lib/utils";
 
@@ -46,16 +46,6 @@ export const Navbar = () => {
               aria-label="GitHub"
             >
               <Github className="h-5 w-5" />
-            </a>
-          </Button>
-          <Button variant="ghost" size="sm" asChild>
-            <a
-              href="https://docs.lovable.dev"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <FileText className="h-4 w-4 mr-2" />
-              Dokumentation
             </a>
           </Button>
         </div>
