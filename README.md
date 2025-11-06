@@ -1,73 +1,99 @@
-# Welcome to your Lovable project
+# Binocular - Repository Data Mining Analytics
 
-## Project info
+Modern data mining analytics for Git repositories with real-time performance tracking and language comparison.
 
-**URL**: https://lovable.dev/projects/ba0a5687-111c-426b-ac09-c201e2a951a5
+## Features
 
-## How can I edit this code?
+- **Repository Analysis Overview**: Live tracking of commit analysis with real-time statistics
+- **Language Performance Comparison**: Compare runtime, memory usage, and CPU utilization across 7 programming languages
+- **Interactive Charts**: Visualize performance metrics with responsive Recharts components
+- **Dark Mode UI**: Modern, accessible interface with smooth animations
+- **Export Functionality**: Download analysis results as JSON or CSV
 
-There are several ways of editing your application.
+## Tech Stack
 
-**Use Lovable**
+- **React** - UI framework
+- **TypeScript** - Type-safe development
+- **Vite** - Fast build tool and dev server
+- **Tailwind CSS** - Utility-first styling
+- **shadcn/ui** - High-quality component library
+- **Recharts** - Data visualization
+- **Framer Motion** - Smooth animations
+- **Zustand** - Lightweight state management
 
-Simply visit the [Lovable Project](https://lovable.dev/projects/ba0a5687-111c-426b-ac09-c201e2a951a5) and start prompting.
+## Getting Started
 
-Changes made via Lovable will be committed automatically to this repo.
+### Prerequisites
 
-**Use your preferred IDE**
+- Node.js 16+ and npm installed ([install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating))
 
-If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
-
-The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
-
-Follow these steps:
+### Installation
 
 ```sh
-# Step 1: Clone the repository using the project's Git URL.
+# Clone the repository
 git clone <YOUR_GIT_URL>
 
-# Step 2: Navigate to the project directory.
-cd <YOUR_PROJECT_NAME>
+# Navigate to the project directory
+cd binocular
 
-# Step 3: Install the necessary dependencies.
-npm i
+# Install dependencies
+npm install
 
-# Step 4: Start the development server with auto-reloading and an instant preview.
+# Start the development server
 npm run dev
 ```
 
-**Edit a file directly in GitHub**
+The application will be available at `http://localhost:5173`
 
-- Navigate to the desired file(s).
-- Click the "Edit" button (pencil icon) at the top right of the file view.
-- Make your changes and commit the changes.
+## Project Structure
 
-**Use GitHub Codespaces**
+```
+src/
+├── components/        # Reusable UI components
+├── pages/            # Main application pages
+├── store/            # State management with Zustand
+├── data/             # Demo data and fixtures
+├── lib/              # Utility functions
+└── types/            # TypeScript type definitions
+```
 
-- Navigate to the main page of your repository.
-- Click on the "Code" button (green button) near the top right.
-- Select the "Codespaces" tab.
-- Click on "New codespace" to launch a new Codespace environment.
-- Edit files directly within the Codespace and commit and push your changes once you're done.
+## Available Scripts
 
-## What technologies are used for this project?
+- `npm run dev` - Start development server
+- `npm run build` - Build for production
+- `npm run preview` - Preview production build locally
+- `npm run lint` - Run ESLint
 
-This project is built with:
+## Development
 
-- Vite
-- TypeScript
-- React
-- shadcn-ui
-- Tailwind CSS
+### Using your IDE
 
-## How can I deploy this project?
+Clone the repository and open it in your preferred IDE:
+- **Visual Studio Code** - Recommended with TypeScript and React extensions
+- **IntelliJ IDEA** - Full support for React and TypeScript
+- **WebStorm** - Excellent React development experience
 
-Simply open [Lovable](https://lovable.dev/projects/ba0a5687-111c-426b-ac09-c201e2a951a5) and click on Share -> Publish.
+### GitHub Workflow
 
-## Can I connect a custom domain to my Lovable project?
+1. Create feature branches for new development
+2. Make changes and commit with descriptive messages
+3. Push to GitHub and create pull requests
+4. Review and merge to main branch
 
-Yes, you can!
+## Deployment
 
-To connect a domain, navigate to Project > Settings > Domains and click Connect Domain.
+Build the project for production:
 
-Read more here: [Setting up a custom domain](https://docs.lovable.dev/features/custom-domain#custom-domain)
+```sh
+npm run build
+```
+
+The `dist/` folder will contain the production-ready files that can be deployed to any static hosting service.
+
+## License
+
+© 2025 Binocular Data Mining
+
+## Contributing
+
+Contributions are welcome! Please feel free to submit a Pull Request.
